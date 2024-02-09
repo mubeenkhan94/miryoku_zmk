@@ -48,7 +48,7 @@ U_NP,              U_NP,              &kp K_APP,         &kp BSPC,          &kp 
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
-U_NP,              U_NP,              &out OUT_USB,      &out OUT_BLE,      NLA,               NGO,               VIO,               NBW,               U_NP,              U_NP
+U_NP,              U_NP,              &out OUT_USB,      &out OUT_BLE,      U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYERMAPPING_PRSNL MIRYOKU_MAPPING
 
