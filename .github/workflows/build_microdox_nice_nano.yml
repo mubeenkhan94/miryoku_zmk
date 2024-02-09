@@ -1,4 +1,4 @@
-name: 'Build Microdox v1 nice_nano_v1'
+name: 'Build Microdox nice_nano'
 on: workflow_dispatch
 jobs:
   build:
