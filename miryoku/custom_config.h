@@ -1,6 +1,19 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(EXTRA,  "Extra") \
+MIRYOKU_X(TAP,    "Tap") \
+MIRYOKU_X(BUTTON, "Button") \
+MIRYOKU_X(NAV,    "Nav") \
+MIRYOKU_X(MOUSE,  "Mouse") \
+MIRYOKU_X(MEDIA,  "Media") \
+MIRYOKU_X(NUM,    "Num") \
+MIRYOKU_X(SYM,    "Sym") \
+MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(PRSNL,  "Personal")
+
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 U_MT(LGUI, A),     U_MT(LALT, R),     U_MT(LCTRL, S),    U_MT(LSHFT, T),    &kp G,             &kp M,             U_MT(RSHFT, N),    U_MT(RCTRL, E),    U_MT(RALT, I),     U_MT(RGUI, O),     \
@@ -30,3 +43,13 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp K_APP,         &kp BSPC,          &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
+#define MIRYOKU_LAYER_PRSNL \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,     \
+U_NP,              U_NP,              &out OUT_USB,      &out OUT_BLE,      NLA,               NGO,               VIO,               NBW,               U_NP,              U_NP
+
+#define MIRYOKU_LAYERMAPPING_PRSNL MIRYOKU_MAPPING
+
+#define MIRYOKU_CLIPBOARD_MAC
