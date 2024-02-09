@@ -1,7 +1,7 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Microdox v1 nice_nano_v1'
+name: 'Build Microdox nice_nano'
 on: workflow_dispatch
 jobs:
   build:
