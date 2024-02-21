@@ -29,6 +29,7 @@ K00    K01       K02       K03  K04  &kp ESC  &kp RET  K05  K06  K07     K08    
 K10    K11       K12       K13  K14  U_NAV    &kp SQT  K15  K16  K17     K18        K19 \
 K20    K21       K22       K23  K24  SCR    OCR    K25  K26  K27     K28        K29 \
 MLK  &kp LEFT  &kp DOWN  K32  K33  K34      K35      K36  K37  &kp UP  &kp RIGHT  CLP
+#endif
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
