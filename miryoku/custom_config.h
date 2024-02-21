@@ -1,11 +1,24 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define U_MLK &kp LC(LG(Q))
-#define U_SCR &kp LS(LG(N2))
-#define U_OCR &kp LC(LA(LG(O)))
-#define U_CLP &kp LS(LG(V))
+#define XXX &none
+#define MLK &kp LC(LG(Q))
+#define SCR &kp LS(LG(N2))
+#define OCR &kp LC(LA(LG(O)))
+#define CLP &kp LS(LG(V))
 
+#if defined MIRYOKU_MAPPING_EXTENDED_THUMBS
+#define MIRYOKU_LAYOUTMAPPING_PLANCK(\
+K00, K01, K02, K03, K04,           K05, K06, K07, K08, K09, \
+K10, K11, K12, K13, K14,           K15, K16, K17, K18, K19, \
+K20, K21, K22, K23, K24,           K25, K26, K27, K28, K29, \
+N30, N31, K32, K33, K34,           K35, K36, K37, N38, N39 \
+) \
+K00  K01  K02  K03  K04  XXX  XXX  K05  K06  K07  K08  K09 \
+K10  K11  K12  K13  K14  XXX  XXX  K15  K16  K17  K18  K19 \
+K20  K21  K22  K23  K24  XXX  XXX  K25  K26  K27  K28  K29 \
+XXX  XXX  XXX  K32  K33  K34  K35  K36  K37  XXX  XXX  XXX
+#else
 #define MIRYOKU_LAYOUTMAPPING_PLANCK(\
 K00,   K01,      K02,      K03, K04,                   K05, K06, K07,    K08,       K09, \
 K10,   K11,      K12,      K13, K14,                   K15, K16, K17,    K18,       K19, \
@@ -14,8 +27,8 @@ N30,   N31,      K32,      K33, K34,                   K35, K36, K37,    N38,   
 ) \
 K00    K01       K02       K03  K04  &kp ESC  &kp RET  K05  K06  K07     K08        K09 \
 K10    K11       K12       K13  K14  U_NAV    &kp SQT  K15  K16  K17     K18        K19 \
-K20    K21       K22       K23  K24  U_SCR    U_OCR    K25  K26  K27     K28        K29 \
-U_MLK  &kp LEFT  &kp DOWN  K32  K33  K34      K35      K36  K37  &kp UP  &kp RIGHT  U_CLP
+K20    K21       K22       K23  K24  SCR    OCR    K25  K26  K27     K28        K29 \
+MLK  &kp LEFT  &kp DOWN  K32  K33  K34      K35      K36  K37  &kp UP  &kp RIGHT  CLP
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -56,7 +69,7 @@ U_NP,              U_NP,              &kp K_APP,         &kp BSPC,          &kp 
 #define MIRYOKU_LAYER_BUTTON \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NU,              U_NU,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_MLK,             U_SCR,             U_OCR,             U_CLP,             U_UND,             \
+U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             MLK,             SCR,             OCR,             CLP,             U_UND,             \
 U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BTN2,            U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
 #define MIRYOKU_CLIPBOARD = MAC
